@@ -1,0 +1,75 @@
+sbody {
+    font-family: Helvetica, Arial;
+    font-size:12px;
+}
+h1 {
+    font-size:200%;
+}
+legend {
+    padding:0 5px;
+    text-align:left;
+}
+fieldset > div {
+    margin:10px 0;
+}
+fieldset > legend + div {
+    margin-top:0;
+}
+fieldset > div:last-child {
+    margin-bottom:0;
+}
+label {
+    display:inline-block;
+    width:150px;
+}
+input {
+    width:400px;
+}
+input[type="number"] {
+    width:30px;
+}
+
+
+.button input[type="submit"] {
+    color:#08233e;
+    font:2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+    font-size:70%;
+    padding:14px;
+   margin-left: 158px;
+    cursor:pointer;
+    display:block;
+    width:auto;
+}
+.button input[type="submit"]:hover {
+    background-color:rgba(255,204,0,0.8);
+}
+
+
+input:required {
+    background:hsl(180, 50%, 90%);
+    border:1px solid #999;
+}
+input:optional {
+    background:hsl(300, 50%, 90%);
+    border:1px dotted hsl(180, 50%, 90%);
+}
+input:valid,
+input:in-range {
+    background:hsl(120, 50%, 90%);
+    border-color:hsl(120, 50%, 50%);
+}
+
+input:invalid,
+input:out-of-range {
+    border-color:hsl(0, 50%, 50%);
+    background:hsl(0, 50%, 90%);
+}
+.help {
+    display:none;
+    font-size:90%;
+}
+input:focus + .help {
+    display:inline-block;
+}
+
+
